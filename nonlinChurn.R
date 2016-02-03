@@ -462,10 +462,8 @@ xyplot(liftCurve,
                        lines = TRUE,
                        points = FALSE))
 
-# my choice of model would be nnet - calibration is the best, 
-# and peformance is comparable to fda
-
-# for nnet,
-# for EventPct = 80, we need 12.6 % of cumTestedPct
-# 12.6 of total is 0.126 * 1667 = 210 samples
-# of this 210, 0.8 * 224 = 179 are churns
+# lift plot plots CumTestedPct (x-axis) vs CumEventPct(y-axis)
+# for fda,
+# for cumEventPct = 80, we need 15.4 % of cumTestedPct
+# 15.4 of total is 0.154 * 1667 = 257 samples
+# of this 257, 0.8 * 224 = 179 are churns
